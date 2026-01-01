@@ -2,48 +2,48 @@
   "expo": {
     "name": "Crossy Road",
     "slug": "crossyroad",
-	"version": "1.0.0",
+    "version": "1.0.0",
     "scheme": "cross",
     "privacy": "public",
     "orientation": "portrait",
-    "primaryColor": "#87C6FF",
     "icon": "./assets/icons/app.png",
     "splash": {
       "image": "./assets/icons/loading.png",
       "resizeMode": "contain",
       "backgroundColor": "#87C6FF"
     },
-	"platforms": ["ios", "android", "web"],
-	"web": {
-     "bundler": "metro",
-    "output": "static"
-    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "icon": "./assets/icons/app.png",
       "supportsTablet": true,
       "buildNumber": "0.0.0"
     },
     "android": {
-      "icon": "./assets/icons/app.png",
-      "versionCode": 1
+      "versionCode": 1,
+      "adaptiveIcon": {
+      "foregroundImage": "./assets/icons/adaptive-icon-foreground.png",
+      "backgroundImage": "./assets/icons/adaptive-icon-background.png"
     },
     "web": {
       "bundler": "metro",
-      "output": "static"
+      "output": "single",
+      "favicon": "./assets/icons/favicon.png"
     },
-    "githubUrl": "https://jpnewton.github.io/Crossy-Road/",
-    "extra": {
-      "baseUrl": "/Crossy-Road" 
+    "experiments": {
+      "baseUrl": "/Crossy-Road"
     },
-    "plugins": [
-      "expo-asset",
-      "expo-router"
-    ],
     "extra": {
+      "baseUrl": "/Crossy-Road",
       "eas": {
         "projectId": "63c6199d-ad0f-4796-871b-b8d65e05680a"
       }
     },
+    "plugins": [
+      "expo-asset",
+      "expo-router",
+      "expo-font"
+    ],
     "runtimeVersion": {
       "policy": "appVersion"
     },

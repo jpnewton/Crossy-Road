@@ -1,19 +1,82 @@
 {
-  "name": "bouncy-bacon",
-  "version": "0.0.0",
-  "main": "expo-router/entry",
-  "scripts": {
-    "start": "expo",
-    "build:web": "expo export -p web",
-    "deploy": "gh-pages -d dist"
+  "_from": "any-promise@^1.0.0",
+  "_id": "any-promise@1.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-7UvmKalWRt1wgjL1RrGxoSJW/0QZFIegpeGvZG9kjp8vrRu55XTHbwnqq2GpXm9uLbcuhxm3IqX9OB4MZR1b2A==",
+  "_location": "/any-promise",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "any-promise@^1.0.0",
+    "name": "any-promise",
+    "escapedName": "any-promise",
+    "rawSpec": "^1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.0"
   },
-  "dependencies": {
-    "expo": "^54.0.30",
-    "expo-font": "~13.0.3",
-    "expo-router": "~4.0.17",
-    "expo-three": "^8.0.0",
-    "three": "0.182.0",
-    "react-native-web": "~0.21.0",
-    "gh-pages": "^6.3.0"
-  }
+  "_requiredBy": [
+    "/mz",
+    "/thenify"
+  ],
+  "_resolved": "https://registry.npmjs.org/any-promise/-/any-promise-1.3.0.tgz",
+  "_shasum": "abc6afeedcea52e809cdc0376aed3ce39635d17f",
+  "_spec": "any-promise@^1.0.0",
+  "_where": "C:\\Projects\\Crossy-Road\\Crossy-Road\\node_modules\\mz",
+  "author": {
+    "name": "Kevin Beaty"
+  },
+  "browser": {
+    "./register.js": "./register-shim.js"
+  },
+  "bugs": {
+    "url": "https://github.com/kevinbeaty/any-promise/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Resolve any installed ES6 compatible promise",
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "bluebird": "^3.0.0",
+    "es6-promise": "^3.0.0",
+	"expo-router": "~6.0.21"
+	"expo": "~54.0.30",
+    "expo-font": "~14.0.10",
+    "expo-router": "~6.0.21",
+    "expo-constants": "~18.0.12",
+    "is-promise": "^2.0.0",
+    "lie": "^3.0.0",
+    "mocha": "^2.0.0",
+    "native-promise-only": "^0.8.0",
+    "phantomjs-prebuilt": "^2.0.0",
+    "pinkie": "^2.0.0",
+    "promise": "^7.0.0",
+    "q": "^1.0.0",
+    "rsvp": "^3.0.0",
+    "vow": "^0.4.0",
+    "when": "^3.0.0",
+    "zuul": "^3.0.0"
+  },
+  "scripts": {
+  "predeploy": "npx expo export --platform web",
+  "deploy": "gh-pages --nojekyll -d dist"
+  },
+  "homepage": "http://github.com/kevinbeaty/any-promise",
+  "keywords": [
+    "promise",
+    "es6"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "any-promise",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinbeaty/any-promise.git"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "typings": "index.d.ts",
+  "version": "1.3.0"
 }
