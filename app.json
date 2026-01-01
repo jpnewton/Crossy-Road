@@ -2,6 +2,7 @@
   "expo": {
     "name": "Crossy Road",
     "slug": "crossyroad",
+	"version": "1.0.0",
     "scheme": "cross",
     "privacy": "public",
     "orientation": "portrait",
@@ -11,6 +12,11 @@
       "image": "./assets/icons/loading.png",
       "resizeMode": "contain",
       "backgroundColor": "#87C6FF"
+    },
+	"platforms": ["ios", "android", "web"],
+	"web": {
+     "bundler": "metro",
+    "output": "static"
     },
     "ios": {
       "icon": "./assets/icons/app.png",
@@ -22,7 +28,12 @@
       "versionCode": 1
     },
     "web": {
+      "bundler": "metro",
       "output": "static"
+    },
+    "githubUrl": "https://jpnewton.github.io/Crossy-Road/",
+    "extra": {
+      "baseUrl": "/Crossy-Road" 
     },
     "plugins": [
       "expo-asset",
