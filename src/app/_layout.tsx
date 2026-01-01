@@ -21,7 +21,7 @@ export default function App() {
 
 function AssetLoading({ children }) {
   const [fontLoaded] = useFonts({
-  'retro': require("../../assets/fonts/retro.ttf"), 
+  'retro': require("../assets/fonts/retro.ttf"), 
   });
 
   const [audioLoaded, audioLoadingError] = useResolvedValue(() =>
