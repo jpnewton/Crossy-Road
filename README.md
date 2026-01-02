@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a aria-label="try expo crossy road in the browser" href="https://crossyroad.expo.app/"><b>Try in the Browser</b></a>
+  <a aria-label="try crossy road in the browser" href="https://crossyroad.expo.app/"><b>Play Crossy Road in the Browser</b></a>
 </p>
   
 ---
